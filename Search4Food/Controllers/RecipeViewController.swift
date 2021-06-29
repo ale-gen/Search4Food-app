@@ -81,11 +81,15 @@ extension RecipeViewController: StepperViewDelegate {
     }
     
     func reachedAtMin(value: Int) {
-        print(value)
+        let alert = UIAlertController(title: "Minimum value of servings was reached.", message: "It is available to set ingredients' amount for 1 to 40 servings", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true)
     }
     
     func reachedAtMax(value: Int) {
-        print(value)
+        let alert = UIAlertController(title: "Maximum value of servings was reached.", message: "It is available to set ingredients' amount for 1 to 40 servings", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true)
     }
     
     
