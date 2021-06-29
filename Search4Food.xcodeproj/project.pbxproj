@@ -20,6 +20,8 @@
 		7ABE1B95268B1C09008964FE /* RecipeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABE1B94268B1C09008964FE /* RecipeData.swift */; };
 		7ABE1B99268B1DDC008964FE /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 7ABE1B98268B1DDC008964FE /* SDWebImage */; };
 		7ABE1B9B268B1DDC008964FE /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7ABE1B9A268B1DDC008964FE /* SDWebImageMapKit */; };
+		7ABE1BA2268B1FCA008964FE /* IngredientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABE1BA0268B1FCA008964FE /* IngredientCell.swift */; };
+		7ABE1BA3268B1FCA008964FE /* IngredientCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ABE1BA1268B1FCA008964FE /* IngredientCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		7ABE1B8E268B1A0C008964FE /* RecipeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeManager.swift; sourceTree = "<group>"; };
 		7ABE1B91268B1BEE008964FE /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
 		7ABE1B94268B1C09008964FE /* RecipeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeData.swift; sourceTree = "<group>"; };
+		7ABE1BA0268B1FCA008964FE /* IngredientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientCell.swift; sourceTree = "<group>"; };
+		7ABE1BA1268B1FCA008964FE /* IngredientCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IngredientCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				7ABE1B77268B11EC008964FE /* Main.storyboard */,
+				7ABE1BA0268B1FCA008964FE /* IngredientCell.swift */,
+				7ABE1BA1268B1FCA008964FE /* IngredientCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,6 +180,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ABE1BA3268B1FCA008964FE /* IngredientCell.xib in Resources */,
 				7ABE1B7E268B11EE008964FE /* LaunchScreen.storyboard in Resources */,
 				7ABE1B7B268B11EE008964FE /* Assets.xcassets in Resources */,
 				7ABE1B79268B11EC008964FE /* Main.storyboard in Resources */,
@@ -189,6 +196,7 @@
 			files = (
 				7ABE1B92268B1BEE008964FE /* RecipeModel.swift in Sources */,
 				7ABE1B8C268B1944008964FE /* Constants.swift in Sources */,
+				7ABE1BA2268B1FCA008964FE /* IngredientCell.swift in Sources */,
 				7ABE1B89268B1914008964FE /* RecipeViewController.swift in Sources */,
 				7ABE1B76268B11EC008964FE /* MenuViewController.swift in Sources */,
 				7ABE1B8F268B1A0C008964FE /* RecipeManager.swift in Sources */,

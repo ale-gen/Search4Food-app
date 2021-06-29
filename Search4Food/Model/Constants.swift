@@ -11,4 +11,5 @@ struct Constants {
     static let apiKey = "34e3222df523448b9d11ee7665305547"
     static let randomSegue = "RandomRecipe"
     static let searchSegue = "SearchRecipe"
+    static let ingredientCellIdentifier = "IngredientCell"
 }
