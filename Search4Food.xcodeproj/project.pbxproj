@@ -70,20 +70,44 @@
 		7ABE1B70268B11EC008964FE /* Search4Food */ = {
 			isa = PBXGroup;
 			children = (
+				7ABE1B9F268B1F6B008964FE /* Views */,
+				7ABE1B9E268B1F5E008964FE /* Controllers */,
+				7ABE1B9D268B1F4B008964FE /* Model */,
 				7ABE1B71268B11EC008964FE /* AppDelegate.swift */,
 				7ABE1B73268B11EC008964FE /* SceneDelegate.swift */,
-				7ABE1B75268B11EC008964FE /* MenuViewController.swift */,
-				7ABE1B77268B11EC008964FE /* Main.storyboard */,
 				7ABE1B7A268B11EE008964FE /* Assets.xcassets */,
 				7ABE1B7C268B11EE008964FE /* LaunchScreen.storyboard */,
 				7ABE1B7F268B11EE008964FE /* Info.plist */,
-				7ABE1B88268B1914008964FE /* RecipeViewController.swift */,
-				7ABE1B8B268B1944008964FE /* Constants.swift */,
-				7ABE1B8E268B1A0C008964FE /* RecipeManager.swift */,
-				7ABE1B91268B1BEE008964FE /* RecipeModel.swift */,
-				7ABE1B94268B1C09008964FE /* RecipeData.swift */,
 			);
 			path = Search4Food;
+			sourceTree = "<group>";
+		};
+		7ABE1B9D268B1F4B008964FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7ABE1B91268B1BEE008964FE /* RecipeModel.swift */,
+				7ABE1B94268B1C09008964FE /* RecipeData.swift */,
+				7ABE1B8E268B1A0C008964FE /* RecipeManager.swift */,
+				7ABE1B8B268B1944008964FE /* Constants.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7ABE1B9E268B1F5E008964FE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7ABE1B88268B1914008964FE /* RecipeViewController.swift */,
+				7ABE1B75268B11EC008964FE /* MenuViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7ABE1B9F268B1F6B008964FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7ABE1B77268B11EC008964FE /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
