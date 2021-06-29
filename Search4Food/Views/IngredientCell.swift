@@ -14,6 +14,7 @@ class IngredientCell: UITableViewCell {
     @IBOutlet weak var ingredientAmountLabel: UILabel!
     
     
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         ingredientBubble.layer.cornerRadius = ingredientBubble.frame.height / 5
