@@ -134,6 +134,7 @@
                     <connections>
                         <outlet property="recipeImage" destination="ZCw-Ca-wV3" id="dhU-HE-HUa"/>
                         <outlet property="recipeLabel" destination="Pjm-5q-vwJ" id="CBN-h3-7fa"/>
+                        <outlet property="stepperView" destination="WgY-mR-cDG" id="kIy-YW-dmk"/>
                         <outlet property="tableView" destination="Q4N-gu-cFi" id="nIk-db-zE7"/>
                     </connections>
                 </viewController>

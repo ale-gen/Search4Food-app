@@ -7,12 +7,14 @@
 
 import UIKit
 import SDWebImage
+import MKStepper
 
 class RecipeViewController: UIViewController {
     
     @IBOutlet weak var recipeImage: UIImageView!
     @IBOutlet weak var recipeLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var stepperView: MKStepperView!
     
     var ingredients: [Ingredients] = []
     var servings = 0.0
@@ -23,6 +25,7 @@ class RecipeViewController: UIViewController {
         super.viewDidLoad()
         recipeManager!.delegate = self
         tableView.dataSource = self
+        stepperView.delegate = self
         
         configureLabel()
         tableView.register(UINib(nibName: "IngredientCell", bundle: nil), forCellReuseIdentifier: "IngredientCell")
@@ -63,11 +66,28 @@ extension RecipeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.ingredientCellIdentifier, for: indexPath) as! IngredientCell
         cell.ingredientNameLabel.text = ingredients[indexPath.row].name
-        let amount = ingredients[indexPath.row].amount
+        let newServings = Double(stepperView.stepperValue)
+        let amount = round(100 * (ingredients[indexPath.row].amount * newServings) / self.servings) / 100
         let unit = ingredients[indexPath.row].unit
         cell.ingredientAmountLabel.text = "\(amount) \(unit)"
         return cell
     }
+    
+}
+
+extension RecipeViewController: StepperViewDelegate {
+    func valueDidChange(value: Int) {
+        tableView.reloadData()
+    }
+    
+    func reachedAtMin(value: Int) {
+        print(value)
+    }
+    
+    func reachedAtMax(value: Int) {
+        print(value)
+    }
+    
     
 }
 
