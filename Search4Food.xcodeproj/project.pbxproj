@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E53F87FA79B8B4DA90CB4C7 /* Pods_Search4Food.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D98E7D5BD4A3C281D2E6B71F /* Pods_Search4Food.framework */; };
 		7ABE1B72268B11EC008964FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABE1B71268B11EC008964FE /* AppDelegate.swift */; };
 		7ABE1B74268B11EC008964FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABE1B73268B11EC008964FE /* SceneDelegate.swift */; };
 		7ABE1B76268B11EC008964FE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABE1B75268B11EC008964FE /* MenuViewController.swift */; };
@@ -18,13 +19,14 @@
 		7ABE1B8F268B1A0C008964FE /* RecipeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABE1B8E268B1A0C008964FE /* RecipeManager.swift */; };
 		7ABE1B92268B1BEE008964FE /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABE1B91268B1BEE008964FE /* RecipeModel.swift */; };
 		7ABE1B95268B1C09008964FE /* RecipeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABE1B94268B1C09008964FE /* RecipeData.swift */; };
-		7ABE1B99268B1DDC008964FE /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 7ABE1B98268B1DDC008964FE /* SDWebImage */; };
-		7ABE1B9B268B1DDC008964FE /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7ABE1B9A268B1DDC008964FE /* SDWebImageMapKit */; };
+		7ABE1B99268B1DDC008964FE /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 7ABE1B98268B1DDC008964FE /* SwiftPackageProductDependency */; };
+		7ABE1B9B268B1DDC008964FE /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 7ABE1B9A268B1DDC008964FE /* SwiftPackageProductDependency */; };
 		7ABE1BA2268B1FCA008964FE /* IngredientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABE1BA0268B1FCA008964FE /* IngredientCell.swift */; };
 		7ABE1BA3268B1FCA008964FE /* IngredientCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ABE1BA1268B1FCA008964FE /* IngredientCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A07C682775A593A1FC39841 /* Pods-Search4Food.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Search4Food.debug.xcconfig"; path = "Target Support Files/Pods-Search4Food/Pods-Search4Food.debug.xcconfig"; sourceTree = "<group>"; };
 		7ABE1B6E268B11EC008964FE /* Search4Food.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Search4Food.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ABE1B71268B11EC008964FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7ABE1B73268B11EC008964FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +42,8 @@
 		7ABE1B94268B1C09008964FE /* RecipeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeData.swift; sourceTree = "<group>"; };
 		7ABE1BA0268B1FCA008964FE /* IngredientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientCell.swift; sourceTree = "<group>"; };
 		7ABE1BA1268B1FCA008964FE /* IngredientCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IngredientCell.xib; sourceTree = "<group>"; };
+		D98E7D5BD4A3C281D2E6B71F /* Pods_Search4Food.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Search4Food.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC98B32C6027423B28CC6D77 /* Pods-Search4Food.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Search4Food.release.xcconfig"; path = "Target Support Files/Pods-Search4Food/Pods-Search4Food.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,19 +51,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7ABE1B9B268B1DDC008964FE /* SDWebImageMapKit in Frameworks */,
-				7ABE1B99268B1DDC008964FE /* SDWebImage in Frameworks */,
+				7ABE1B9B268B1DDC008964FE /* BuildFile in Frameworks */,
+				7ABE1B99268B1DDC008964FE /* BuildFile in Frameworks */,
+				2E53F87FA79B8B4DA90CB4C7 /* Pods_Search4Food.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D9EB1B21619F666F0FA4893 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D98E7D5BD4A3C281D2E6B71F /* Pods_Search4Food.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		41F956A01747FBF20480C0CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A07C682775A593A1FC39841 /* Pods-Search4Food.debug.xcconfig */,
+				EC98B32C6027423B28CC6D77 /* Pods-Search4Food.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7ABE1B65268B11EC008964FE = {
 			isa = PBXGroup;
 			children = (
 				7ABE1B70268B11EC008964FE /* Search4Food */,
 				7ABE1B6F268B11EC008964FE /* Products */,
+				41F956A01747FBF20480C0CF /* Pods */,
+				0D9EB1B21619F666F0FA4893 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,9 +148,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7ABE1B82268B11EE008964FE /* Build configuration list for PBXNativeTarget "Search4Food" */;
 			buildPhases = (
+				8D2EBFCDDCDD3714309001CC /* [CP] Check Pods Manifest.lock */,
 				7ABE1B6A268B11EC008964FE /* Sources */,
 				7ABE1B6B268B11EC008964FE /* Frameworks */,
 				7ABE1B6C268B11EC008964FE /* Resources */,
+				6D74D8A35AF0FFC879067CAF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,8 +160,8 @@
 			);
 			name = Search4Food;
 			packageProductDependencies = (
-				7ABE1B98268B1DDC008964FE /* SDWebImage */,
-				7ABE1B9A268B1DDC008964FE /* SDWebImageMapKit */,
+				7ABE1B98268B1DDC008964FE /* SwiftPackageProductDependency */,
+				7ABE1B9A268B1DDC008964FE /* SwiftPackageProductDependency */,
 			);
 			productName = Search4Food;
 			productReference = 7ABE1B6E268B11EC008964FE /* Search4Food.app */;
@@ -164,7 +191,7 @@
 			);
 			mainGroup = 7ABE1B65268B11EC008964FE;
 			packageReferences = (
-				7ABE1B97268B1DDC008964FE /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				7ABE1B97268B1DDC008964FE /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = 7ABE1B6F268B11EC008964FE /* Products */;
 			projectDirPath = "";
@@ -188,6 +215,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D74D8A35AF0FFC879067CAF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Search4Food/Pods-Search4Food-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Search4Food/Pods-Search4Food-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Search4Food/Pods-Search4Food-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D2EBFCDDCDD3714309001CC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Search4Food-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7ABE1B6A268B11EC008964FE /* Sources */ = {
@@ -346,6 +415,7 @@
 		};
 		7ABE1B83268B11EE008964FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A07C682775A593A1FC39841 /* Pods-Search4Food.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -365,6 +435,7 @@
 		};
 		7ABE1B84268B11EE008964FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC98B32C6027423B28CC6D77 /* Pods-Search4Food.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -406,7 +477,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		7ABE1B97268B1DDC008964FE /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+		7ABE1B97268B1DDC008964FE /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
 			requirement = {
@@ -417,14 +488,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		7ABE1B98268B1DDC008964FE /* SDWebImage */ = {
+		7ABE1B98268B1DDC008964FE /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7ABE1B97268B1DDC008964FE /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			package = 7ABE1B97268B1DDC008964FE /* RemoteSwiftPackageReference */;
 			productName = SDWebImage;
 		};
-		7ABE1B9A268B1DDC008964FE /* SDWebImageMapKit */ = {
+		7ABE1B9A268B1DDC008964FE /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7ABE1B97268B1DDC008964FE /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			package = 7ABE1B97268B1DDC008964FE /* RemoteSwiftPackageReference */;
 			productName = SDWebImageMapKit;
 		};
 /* End XCSwiftPackageProductDependency section */

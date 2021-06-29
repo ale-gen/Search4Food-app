@@ -1,0 +1,16 @@
+PODS:
+  - MKStepper (0.1.7)
+
+DEPENDENCIES:
+  - MKStepper
+
+SPEC REPOS:
+  trunk:
+    - MKStepper
+
+SPEC CHECKSUMS:
+  MKStepper: b7762f9b0e11ec8b8c50e232a73611e5fcb8c9ec
+
+PODFILE CHECKSUM: 0ae13e290479588d2cb9f590490ab72a042f1caa
+
+COCOAPODS: 1.10.1
