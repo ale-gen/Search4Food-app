@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -43,6 +44,9 @@
                                 <state key="normal" title="Search">
                                     <color key="titleColor" red="0.88235294119999996" green="0.94901960780000005" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Y3f-Iw-mHk" kind="show" id="UFA-ac-ZUt"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -73,13 +77,61 @@
                     <view key="view" contentMode="scaleToFill" id="KGb-3N-DG0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nRy-No-8Bi">
+                                <rect key="frame" x="0.0" y="88" width="414" height="60"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter recipe" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DdW-Lj-OX4">
+                                        <rect key="frame" x="20" y="12" width="328" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="328" id="DBz-0g-1gv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7y-ob-Sx1">
+                                        <rect key="frame" x="358" y="12" width="36" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <color key="tintColor" red="0.88235294119999996" green="0.94901960780000005" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal">
+                                            <imageReference key="image" image="magnifyingglass" catalog="system" symbolScale="default"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.53286176919999995" green="0.81019288300000003" blue="0.9467687011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="l7y-ob-Sx1" firstAttribute="leading" secondItem="DdW-Lj-OX4" secondAttribute="trailing" constant="10" id="HRd-Ml-c6L"/>
+                                    <constraint firstAttribute="height" constant="60" id="JiQ-Vq-nFR"/>
+                                    <constraint firstAttribute="bottom" secondItem="DdW-Lj-OX4" secondAttribute="bottom" constant="12" id="L7k-LJ-Zsz"/>
+                                    <constraint firstAttribute="trailing" secondItem="l7y-ob-Sx1" secondAttribute="trailing" constant="20" id="S4M-fo-aOn"/>
+                                    <constraint firstItem="DdW-Lj-OX4" firstAttribute="top" secondItem="nRy-No-8Bi" secondAttribute="top" constant="12" id="ia2-Tf-JBi"/>
+                                    <constraint firstItem="l7y-ob-Sx1" firstAttribute="top" secondItem="nRy-No-8Bi" secondAttribute="top" constant="12" id="mlE-Rq-Ocr"/>
+                                    <constraint firstItem="DdW-Lj-OX4" firstAttribute="leading" secondItem="nRy-No-8Bi" secondAttribute="leading" constant="20" id="t4o-Jc-X2a"/>
+                                    <constraint firstAttribute="bottom" secondItem="l7y-ob-Sx1" secondAttribute="bottom" constant="12" id="y45-og-PhV"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YFm-8j-EbU">
+                                <rect key="frame" x="0.0" y="148" width="414" height="734"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="uX9-pX-4ko"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YFm-8j-EbU" firstAttribute="bottom" secondItem="uX9-pX-4ko" secondAttribute="bottom" constant="20" id="7Rk-Xa-dXj"/>
+                            <constraint firstItem="nRy-No-8Bi" firstAttribute="leading" secondItem="uX9-pX-4ko" secondAttribute="leading" id="J4N-o4-TOC"/>
+                            <constraint firstItem="YFm-8j-EbU" firstAttribute="leading" secondItem="uX9-pX-4ko" secondAttribute="leading" id="SQS-0j-zQe"/>
+                            <constraint firstItem="nRy-No-8Bi" firstAttribute="top" secondItem="uX9-pX-4ko" secondAttribute="top" id="VsL-X0-tCT"/>
+                            <constraint firstItem="nRy-No-8Bi" firstAttribute="trailing" secondItem="uX9-pX-4ko" secondAttribute="trailing" id="Xbu-xH-JOC"/>
+                            <constraint firstItem="YFm-8j-EbU" firstAttribute="trailing" secondItem="uX9-pX-4ko" secondAttribute="trailing" id="dFe-mD-S00"/>
+                            <constraint firstItem="YFm-8j-EbU" firstAttribute="top" secondItem="nRy-No-8Bi" secondAttribute="bottom" id="j5s-KK-o7e"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Fmk-Mz-z30"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ke-Gp-uJK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1903" y="512"/>
+            <point key="canvasLocation" x="1898.5507246376812" y="525"/>
         </scene>
         <!--Recipe View Controller-->
         <scene sceneID="4nT-NB-73s">
@@ -157,7 +209,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OSo-7E-27f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2982.608695652174" y="75.669642857142847"/>
+            <point key="canvasLocation" x="2984" y="60"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hPI-Mp-D3k">
@@ -180,6 +232,7 @@
     </scenes>
     <resources>
         <image name="MainRecipeApp" width="360" height="640"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
