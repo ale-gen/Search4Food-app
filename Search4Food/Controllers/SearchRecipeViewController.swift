@@ -20,6 +20,13 @@ class SearchRecipeViewController: UIViewController {
         recipeListManager!.delegate = self
         tableView.dataSource = self
         textField.delegate = self
+        
+        configureTableView()
+    }
+    
+    func configureTableView() {
+        tableView.rowHeight = 60
+        tableView.tableFooterView = UIView()
     }
 }
 
