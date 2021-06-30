@@ -7,10 +7,10 @@ The app is written in MVC design pattern. I used storyboard to design my views.
 
 Below app views: 
 
-! [MenuView](Images/MenuView.png)
-! [RandomRecipe](Images/RandomRecipe_1.png)
-! [RandomRecipe](Images/RandomRecipe_2.png)
-! [SearchView](Images/SearchView.png)
-! [RecipeList](Images/RecipeList.png)
+![MenuView](Images/MenuView.png)
+![RandomRecipe](Images/RandomRecipe_1.png)
+![RandomRecipe](Images/RandomRecipe_2.png)
+![SearchView](Images/SearchView.png)
+![RecipeList](Images/RecipeList.png)
 
 
