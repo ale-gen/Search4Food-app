@@ -45,7 +45,7 @@
                                     <color key="titleColor" red="0.88235294119999996" green="0.94901960780000005" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Y3f-Iw-mHk" kind="show" id="UFA-ac-ZUt"/>
+                                    <segue destination="Y3f-Iw-mHk" kind="show" identifier="SearchRecipe" id="UFA-ac-ZUt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -70,10 +70,10 @@
             </objects>
             <point key="canvasLocation" x="815.94202898550736" y="75.669642857142847"/>
         </scene>
-        <!--View Controller-->
+        <!--Search Recipe View Controller-->
         <scene sceneID="XqA-H1-V5W">
             <objects>
-                <viewController id="Y3f-Iw-mHk" sceneMemberID="viewController">
+                <viewController id="Y3f-Iw-mHk" customClass="SearchRecipeViewController" customModule="Search4Food" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KGb-3N-DG0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -96,6 +96,9 @@
                                         <state key="normal">
                                             <imageReference key="image" image="magnifyingglass" catalog="system" symbolScale="default"/>
                                         </state>
+                                        <connections>
+                                            <action selector="enterButtonPressed:" destination="Y3f-Iw-mHk" eventType="touchUpInside" id="2fJ-kN-TlK"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.53286176919999995" green="0.81019288300000003" blue="0.9467687011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -113,6 +116,16 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YFm-8j-EbU">
                                 <rect key="frame" x="0.0" y="148" width="414" height="734"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SingleRecipeCell" id="M3K-W2-HhI">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="M3K-W2-HhI" id="5Zs-Ry-DaV">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uX9-pX-4ko"/>
@@ -128,6 +141,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Fmk-Mz-z30"/>
+                    <connections>
+                        <outlet property="tableView" destination="YFm-8j-EbU" id="ced-Ll-i6H"/>
+                        <outlet property="textField" destination="DdW-Lj-OX4" id="Uqe-um-f98"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ke-Gp-uJK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

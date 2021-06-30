@@ -12,4 +12,5 @@ struct Constants {
     static let randomSegue = "RandomRecipe"
     static let searchSegue = "SearchRecipe"
     static let ingredientCellIdentifier = "IngredientCell"
+    static let singleSearchedRecipeCellIdentifier = "SingleRecipeCell"
 }

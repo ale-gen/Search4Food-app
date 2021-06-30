@@ -10,6 +10,7 @@ import UIKit
 class MenuViewController: UIViewController {
     
     var recipeManager = RecipeManager()
+    var recipeListManager = SearchRecipeManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,12 @@ class MenuViewController: UIViewController {
         if segue.identifier == Constants.randomSegue {
             if let recipeViewController = segue.destination as? RecipeViewController {
                 recipeViewController.recipeManager = self.recipeManager
+            }
+        }
+        
+        if segue.identifier == Constants.searchSegue {
+            if let searchRecipeViewController = segue.destination as? SearchRecipeViewController {
+                searchRecipeViewController.recipeListManager = self.recipeListManager
             }
         }
     }

@@ -21,6 +21,7 @@ struct SearchRecipeManager {
     
     func fetchRecipesList(recipe: String) {
         let url = "\(recipeURL)complexSearch?apiKey=\(Constants.apiKey)&query=\(recipe)"
+        print(url)
         performRecipesList(with: url)
     }
     
