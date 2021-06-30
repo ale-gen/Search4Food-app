@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2E53F87FA79B8B4DA90CB4C7 /* Pods_Search4Food.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D98E7D5BD4A3C281D2E6B71F /* Pods_Search4Food.framework */; };
+		7A9CFB4A268CF02500844676 /* SearchRecipeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9CFB49268CF02500844676 /* SearchRecipeManager.swift */; };
+		7A9CFB4D268CF1AC00844676 /* RecipeListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9CFB4C268CF1AC00844676 /* RecipeListData.swift */; };
+		7A9CFB50268CF3BA00844676 /* RecipeListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9CFB4F268CF3BA00844676 /* RecipeListModel.swift */; };
 		7ABE1B72268B11EC008964FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABE1B71268B11EC008964FE /* AppDelegate.swift */; };
 		7ABE1B74268B11EC008964FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABE1B73268B11EC008964FE /* SceneDelegate.swift */; };
 		7ABE1B76268B11EC008964FE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABE1B75268B11EC008964FE /* MenuViewController.swift */; };
@@ -19,14 +22,17 @@
 		7ABE1B8F268B1A0C008964FE /* RecipeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABE1B8E268B1A0C008964FE /* RecipeManager.swift */; };
 		7ABE1B92268B1BEE008964FE /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABE1B91268B1BEE008964FE /* RecipeModel.swift */; };
 		7ABE1B95268B1C09008964FE /* RecipeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABE1B94268B1C09008964FE /* RecipeData.swift */; };
-		7ABE1B99268B1DDC008964FE /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 7ABE1B98268B1DDC008964FE /* SwiftPackageProductDependency */; };
-		7ABE1B9B268B1DDC008964FE /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 7ABE1B9A268B1DDC008964FE /* SwiftPackageProductDependency */; };
+		7ABE1B99268B1DDC008964FE /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 7ABE1B98268B1DDC008964FE /* SDWebImage */; };
+		7ABE1B9B268B1DDC008964FE /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7ABE1B9A268B1DDC008964FE /* SDWebImageMapKit */; };
 		7ABE1BA2268B1FCA008964FE /* IngredientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABE1BA0268B1FCA008964FE /* IngredientCell.swift */; };
 		7ABE1BA3268B1FCA008964FE /* IngredientCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ABE1BA1268B1FCA008964FE /* IngredientCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7A07C682775A593A1FC39841 /* Pods-Search4Food.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Search4Food.debug.xcconfig"; path = "Target Support Files/Pods-Search4Food/Pods-Search4Food.debug.xcconfig"; sourceTree = "<group>"; };
+		7A9CFB49268CF02500844676 /* SearchRecipeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipeManager.swift; sourceTree = "<group>"; };
+		7A9CFB4C268CF1AC00844676 /* RecipeListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListData.swift; sourceTree = "<group>"; };
+		7A9CFB4F268CF3BA00844676 /* RecipeListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListModel.swift; sourceTree = "<group>"; };
 		7ABE1B6E268B11EC008964FE /* Search4Food.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Search4Food.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ABE1B71268B11EC008964FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7ABE1B73268B11EC008964FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,8 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7ABE1B9B268B1DDC008964FE /* BuildFile in Frameworks */,
-				7ABE1B99268B1DDC008964FE /* BuildFile in Frameworks */,
+				7ABE1B9B268B1DDC008964FE /* SDWebImageMapKit in Frameworks */,
+				7ABE1B99268B1DDC008964FE /* SDWebImage in Frameworks */,
 				2E53F87FA79B8B4DA90CB4C7 /* Pods_Search4Food.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,7 +80,6 @@
 				7A07C682775A593A1FC39841 /* Pods-Search4Food.debug.xcconfig */,
 				EC98B32C6027423B28CC6D77 /* Pods-Search4Food.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -118,6 +123,9 @@
 				7ABE1B94268B1C09008964FE /* RecipeData.swift */,
 				7ABE1B8E268B1A0C008964FE /* RecipeManager.swift */,
 				7ABE1B8B268B1944008964FE /* Constants.swift */,
+				7A9CFB49268CF02500844676 /* SearchRecipeManager.swift */,
+				7A9CFB4C268CF1AC00844676 /* RecipeListData.swift */,
+				7A9CFB4F268CF3BA00844676 /* RecipeListModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -160,8 +168,8 @@
 			);
 			name = Search4Food;
 			packageProductDependencies = (
-				7ABE1B98268B1DDC008964FE /* SwiftPackageProductDependency */,
-				7ABE1B9A268B1DDC008964FE /* SwiftPackageProductDependency */,
+				7ABE1B98268B1DDC008964FE /* SDWebImage */,
+				7ABE1B9A268B1DDC008964FE /* SDWebImageMapKit */,
 			);
 			productName = Search4Food;
 			productReference = 7ABE1B6E268B11EC008964FE /* Search4Food.app */;
@@ -191,7 +199,7 @@
 			);
 			mainGroup = 7ABE1B65268B11EC008964FE;
 			packageReferences = (
-				7ABE1B97268B1DDC008964FE /* RemoteSwiftPackageReference */,
+				7ABE1B97268B1DDC008964FE /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = 7ABE1B6F268B11EC008964FE /* Products */;
 			projectDirPath = "";
@@ -266,8 +274,11 @@
 				7ABE1B92268B1BEE008964FE /* RecipeModel.swift in Sources */,
 				7ABE1B8C268B1944008964FE /* Constants.swift in Sources */,
 				7ABE1BA2268B1FCA008964FE /* IngredientCell.swift in Sources */,
+				7A9CFB4A268CF02500844676 /* SearchRecipeManager.swift in Sources */,
 				7ABE1B89268B1914008964FE /* RecipeViewController.swift in Sources */,
+				7A9CFB50268CF3BA00844676 /* RecipeListModel.swift in Sources */,
 				7ABE1B76268B11EC008964FE /* MenuViewController.swift in Sources */,
+				7A9CFB4D268CF1AC00844676 /* RecipeListData.swift in Sources */,
 				7ABE1B8F268B1A0C008964FE /* RecipeManager.swift in Sources */,
 				7ABE1B95268B1C09008964FE /* RecipeData.swift in Sources */,
 				7ABE1B72268B11EC008964FE /* AppDelegate.swift in Sources */,
@@ -477,7 +488,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		7ABE1B97268B1DDC008964FE /* RemoteSwiftPackageReference */ = {
+		7ABE1B97268B1DDC008964FE /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
 			requirement = {
@@ -488,14 +499,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		7ABE1B98268B1DDC008964FE /* SwiftPackageProductDependency */ = {
+		7ABE1B98268B1DDC008964FE /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7ABE1B97268B1DDC008964FE /* RemoteSwiftPackageReference */;
+			package = 7ABE1B97268B1DDC008964FE /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImage;
 		};
-		7ABE1B9A268B1DDC008964FE /* SwiftPackageProductDependency */ = {
+		7ABE1B9A268B1DDC008964FE /* SDWebImageMapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7ABE1B97268B1DDC008964FE /* RemoteSwiftPackageReference */;
+			package = 7ABE1B97268B1DDC008964FE /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImageMapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
